@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaghan Vishwanathan A</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    <nav style="height:115%;">
+        <img src="/images/logo.png" class="logo" style="margin-left:50px; margin-top:5px;" >
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="header">
+        <div class="container">
+
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Jaghan</span><br>Vishwanathan From Chennai<br>Currently working in Virtusa as Associate Engineer<br>
+                In my free time I <span>Travel</span> a lot and explore stuffs on <span>Aviation</span><br></h1>
+            </div>
+        </div>
+    </div>
+
+<!----------------------------------------------------------------------------------------about---------------------------------------------------------------------> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" >
+                    <!-- <img src="images/user.png"> -->
+                    <h1 class="sub-title">About Me </h1>
+                    <p>I am a hardworking and ambitious individual with excellent
+                        communication skills, enabling me to effectively communicate
+                        with a wide range of people. I am seeking a position in
+                        which I can put into practice my knowledge and experience,
+                        ultimately benefiting the operations of the organisation that
+                        I work for.</p>
+                </div>
+                <div class="about-col-2" style="margin-left:3%">
+                    <!-- <h1 class="sub-title">About Me<br> </h1>
+                    <p>I am a hardworking and ambitious individual with excellent
+                        communication skills, enabling me to effectively communicate
+                        with a wide range of people. I am seeking a position in
+                        which I can put into practice my knowledge and experience,
+                        ultimately benefiting the operations of the organisation that
+                        I work for.</p> -->
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Backend Development</span><br>Java | Springboot | Maven </li>
+                            <li><span>Frontend Development</span><br>JavaScript | Angular</li>
+                            <!-- <li><span>UI/UX(undergoing)</span><br>Desgining Web/App Interfaces</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Present</span><br>Associate Engineer - Technology at Virtusa<br>Full Stack Developer</li>
+                            <li><span>2021 - 2022</span><br>Intern at Virtusa<br>Full Stack Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"id="education">
+                        <ul>
+                            <li><span>2018 - 2022</span><br>B.E. ECE <br> R.M.K. College of Engineering and Technology</li>
+                            <li><span>2016 - 2018</span><br>HSC <br>Velammal Matriculation Higher Secondary School</li>
+                            <li><span>2015 - 2016</span><br>SSLC <br>Velammal Matriculation Higher Secondary School</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <br>
+    
+<!-- -------------------------projects------------------------ -->
+<div id="projects">
+    <div class="container">
+        <div class="project-head">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-print"></i>
+                <h2>Printer Service Center</h2>
+                <p>A Web Application where users can get a prior appointment to get their printer serviced based on their location and availabilty</p>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-truck"></i>
+                <h2>Cargo Delivery - Parcelo</h2>
+                <p>A Web platform to register as a driver or user to provide or avail cargo delivery services</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-person-military-rifle"></i>
+                <h2>Integrated Soldier Security System</h2>
+                <p>A device which tracks the location and necessary vitals of a soldier and actively records what the soldier sees and sends live satellite data to finish his tasks safely and effectively</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!-----------------------------------------------------------------------------------------contact------------------------------------------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>jaghan2001@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/_SILENTGUARDIAN"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.instagram.com/juliet_victor_alpha/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jaghanvishwanathan"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="/images/jaghanvishwanathana.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------------------------------------------------------------Script------------------------------------------------------------------>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwxBnAWrDKpzGUpanKgPW4pZv9AwV5r-xB-tE-nuwsTG3WUf28hoSn1uGDv9qk5HQUp/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
