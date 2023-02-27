@@ -104,7 +104,8 @@ nav ul li a:hover::after{
 }
 
 .header-text p{
-    color: #CF0A0A;
+    /*color: #CF0A0A;*/
+    color: #f15304;
 }
 
 .header-text h1{
@@ -351,8 +352,11 @@ form btn2{
 nav .fas{
     display: none;
 }
+nav .fas1{
+    display: none;
+}
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     #header{
         background-image: url(images/page1phone.png);
     }
@@ -367,12 +371,17 @@ nav .fas{
     nav .fas{
         display: block;
         font-size: 25px;
+        margin-right: 2%;
+    }
+    nav .fas1{
+        display: block;
+        font-size: 25px;
     }
     nav ul{
         background: #0005;
         position: fixed;
         top: 0;
-        right: -200px;
+        right: -300px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
@@ -390,6 +399,26 @@ nav .fas{
         cursor: pointer;
     }
     .sub-title{
-        font-size: 40px;
+        font-size: 30px;
+        margin-right: 2%;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+        margin-right: 2%;
+        font-size: 15px;
+
+    }
+    .about-col-1{
+        margin-right: 1%;
+    }
+    .about-col-2{
+        margin-right: 2%;
+    }
+    .tab-links{
+        margin-right: 25px;
+        font-size: 16px;
+    }
+    .contact-left,.contact-right{
+        flex-basis: 100%;
     }
 }
