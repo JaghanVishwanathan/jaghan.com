@@ -13,12 +13,14 @@
 <body>
     <nav style="height:115%;">
         <img src="/images/logo.png" class="logo" style="margin-left:50px; margin-top:5px;" >
-        <ul>
+        <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
         </ul>
+        <i class="fas fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
     </nav>
     <div id="header">
         <div class="container">
@@ -171,6 +173,15 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+  <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
   </script>
 
 </body>
