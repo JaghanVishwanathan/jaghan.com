@@ -28,7 +28,7 @@ body{
 
 nav{
     display: flex;
-    position: sticky;
+    position:sticky;
     top: 0%;
     align-items: center;
     justify-content: space-between;
@@ -121,6 +121,7 @@ nav ul li a:hover::after{
 
 #about{
     padding: 80px;
+    margin-left: 5%;
     color: #ababab;
 }
 
@@ -128,8 +129,12 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-left: 0;
+    flex-basis: 100%;
 }
-
+#about .container{
+    padding : 0px 0%;
+}
 .about-col-1{
     flex-basis: 50%;
     font-size: 20px;
@@ -361,28 +366,33 @@ nav .fas1{
         background-image: url(images/page1phone.png);
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 80%;
         margin-left: 50%;
         font-size: 16px;
     }
     .header-text h1{
         font-size: 13px;
     }
+    nav{
+        background-color: #080808d7;
+    }
     nav .fas{
         display: block;
         font-size: 25px;
-        margin-right: 2%;
+        margin-right: 0%;
     }
     nav .fas1{
         display: block;
         font-size: 25px;
+        margin-right: 4%;
     }
     nav ul{
         background: #0005;
         position: fixed;
         top: 0;
-        right: -300px;
-        width: 200px;
+        margin-right: 0%;
+        right: -200px;
+        width: 150px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
@@ -402,6 +412,9 @@ nav .fas1{
         font-size: 30px;
         margin-right: 2%;
     }
+    #about {
+        padding: 35px;
+    }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
         margin-right: 2%;
@@ -417,6 +430,7 @@ nav .fas1{
     .tab-links{
         margin-right: 25px;
         font-size: 16px;
+        /* position:relative; */
     }
     .contact-left,.contact-right{
         flex-basis: 100%;

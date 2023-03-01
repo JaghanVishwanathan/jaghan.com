@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav style="height:115%;">
+    <nav id="navbar" style="height:115%;">
         <img src="/images/logo.png" class="logo" style="margin-left:50px; margin-top:5px;" >
         <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
@@ -38,7 +38,6 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1" >
-                    <!-- <img src="images/user.png"> -->
                     <h1 class="sub-title">About Me </h1>
                     <p>I am a hardworking and ambitious individual with excellent
                         communication skills, enabling me to effectively communicate
@@ -48,13 +47,6 @@
                         I work for.</p>
                 </div>
                 <div class="about-col-2" style="margin-left:3%">
-                    <!-- <h1 class="sub-title">About Me<br> </h1>
-                    <p>I am a hardworking and ambitious individual with excellent
-                        communication skills, enabling me to effectively communicate
-                        with a wide range of people. I am seeking a position in
-                        which I can put into practice my knowledge and experience,
-                        ultimately benefiting the operations of the organisation that
-                        I work for.</p> -->
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -86,7 +78,7 @@
     </div>
     </div>
     <br>
-    
+   
 <!-- -------------------------projects------------------------ -->
 <div id="projects">
     <div class="container">
@@ -107,6 +99,11 @@
                 <i class="fa-solid fa-person-military-rifle"></i>
                 <h2>Integrated Soldier Security System</h2>
                 <p>A device which tracks the location and necessary vitals of a soldier and actively records what the soldier sees and sends live satellite data to finish his tasks safely and effectively</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-hospital"></i>
+                <h2>Hospital Management</h2>
+                <p>A Core Java Project using JDBC to implement CRUD operations on Patient & Doctor database, and to book or cancel an appointment for a specific doctor</p>
             </div>
         </div>
     </d>
@@ -156,13 +153,13 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 
-    
+   
 </script>
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwxBnAWrDKpzGUpanKgPW4pZv9AwV5r-xB-tE-nuwsTG3WUf28hoSn1uGDv9qk5HQUp/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
-  
+ 
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
@@ -176,6 +173,7 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+
   <script>
     var sidemenu=document.getElementById("sidemenu");
     function openmenu(){
