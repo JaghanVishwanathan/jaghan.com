@@ -301,6 +301,10 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 
+.submitbutton{
+    cursor: pointer;
+}
+
 .social-icons a:hover{
     /* color: #DC5F00; */
     transform: translateY(-5px);

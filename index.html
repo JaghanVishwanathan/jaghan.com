@@ -154,12 +154,16 @@
             <div class="contact-right">
                 <form action="https://script.google.com/macros/s/AKfycbydSJ_5ljuyJmmLocag74SiWH4AAGz57TUxiul5ggltciKOIkD8sDRp4xtHkqaqLfG-/exec" 
                       method="POST" 
-                      name="submit-to-google-sheet">
+                      name="submit-to-google-sheet"
+                      target="hidden_iframe"
+                      onsubmit="return handleSubmit(this)">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <button type="submit" class="btn btn2 submitbutton">Submit</button>
                 </form>
+                <iframe name="hidden_iframe" style="display:none;"></iframe>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -184,6 +188,26 @@
 
    
 </script>
+
+<script>
+function showMessage() {
+  document.getElementById("msg").innerHTML = "✅ Message sent successfully!";
+  setTimeout(() => { document.getElementById("msg").innerHTML = ""; }, 5000);
+}
+</script>
+
+<script>
+function handleSubmit(form) {
+  setTimeout(() => {
+    document.getElementById("msg").innerHTML = "✅ Message sent successfully!";
+    form.reset();
+    setTimeout(() => { document.getElementById("msg").innerHTML = ""; }, 5000);
+  }, 500);
+
+  return true;
+}
+</script>
+
 <!-- <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwxBnAWrDKpzGUpanKgPW4pZv9AwV5r-xB-tE-nuwsTG3WUf28hoSn1uGDv9qk5HQUp/exec'
     const form = document.forms['submit-to-google-sheet']
