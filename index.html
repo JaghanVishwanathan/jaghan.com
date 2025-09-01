@@ -141,7 +141,6 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <!-- <p><i id="envelope" class="fa-solid fa-envelope"></i>jaghan2001@gmail.com</p> -->
                 <p><img src="https://img.icons8.com/color/30/null/gmail--v1.png"/> &ensp;jaghan2001@gmail.com</p>
                
                 <div class="social-icons">
@@ -151,18 +150,21 @@
                 </div>
                 <a href="/images/jaghanvishwanathana.pdf" download class="btn btn2">Download Resume</a>
             </div>
+            
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
+                <form action="https://script.google.com/macros/s/AKfycbwxBnAWrDKpzGUpanKgPW4pZv9AwV5r-xB-tE-nuwsTG3WUf28hoSn1uGDv9qk5HQUp/exec" 
+                      method="POST" 
+                      name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
-                <span id="msg"></span>
             </div>
         </div>
     </div>
 </div>
+
 <!----------------------------------------------------------------------------------Script------------------------------------------------------------------>
 <script>
 
@@ -182,7 +184,7 @@
 
    
 </script>
-<script>
+<!-- <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwxBnAWrDKpzGUpanKgPW4pZv9AwV5r-xB-tE-nuwsTG3WUf28hoSn1uGDv9qk5HQUp/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
@@ -199,7 +201,7 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+  </script> -->
 
   <script>
     var sidemenu=document.getElementById("sidemenu");
