@@ -1,0 +1,64 @@
+.footer {
+  padding: var(--space-7) 0 var(--space-6) 0;
+  background: transparent;
+  position: relative;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-5);
+  text-align: center;
+}
+
+.legacy-button {
+  background: transparent;
+  border: 2px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: var(--space-3) var(--space-6);
+  color: var(--text-secondary);
+  font-size: var(--body);
+  font-weight: var(--fw-medium);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: inherit;
+  margin-bottom: var(--space-2);
+}
+
+.legacy-button:hover {
+  border-color: var(--accent-secondary);
+  color: var(--accent-secondary);
+  background: rgba(56, 189, 248, 0.05);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.15);
+}
+
+.legacy-icon {
+  font-size: var(--body-lg);
+  opacity: 0.8;
+}
+
+.legacy-text {
+  letter-spacing: 0.05em;
+}
+
+.footer-note {
+  font-size: var(--body-sm);
+  color: var(--text-disabled);
+  margin-top: var(--space-2);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--space-5) 0 var(--space-4) 0;
+  }
+
+  .legacy-button {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--body-sm);
+  }
+}

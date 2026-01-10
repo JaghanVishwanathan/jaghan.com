@@ -1,0 +1,41 @@
+<section class="projects section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    
+    <div class="projects-grid">
+      <div 
+        *ngFor="let project of projects" 
+        class="project-card"
+        (click)="openProject(project)"
+      >
+        <h3 class="project-name">{{ project.name }}</h3>
+        <p class="project-description">{{ project.description }}</p>
+        <div class="project-tech">
+          <span *ngFor="let tech of project.technologies" class="tech-tag">{{ tech }}</span>
+        </div>
+        <div class="project-link">View Details →</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Modal -->
+  <div class="project-modal" *ngIf="selectedProject" (click)="closeProject()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="close-btn" (click)="closeProject()">×</button>
+      <h2>{{ selectedProject.name }}</h2>
+      <p class="modal-description">{{ selectedProject.description }}</p>
+      <div class="modal-tech">
+        <h4>Technologies:</h4>
+        <div class="tech-list">
+          <span *ngFor="let tech of selectedProject.technologies" class="tech-tag">{{ tech }}</span>
+        </div>
+      </div>
+      <div class="modal-achievements" *ngIf="selectedProject.achievements">
+        <h4>Achievements:</h4>
+        <ul>
+          <li *ngFor="let achievement of selectedProject.achievements">{{ achievement }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

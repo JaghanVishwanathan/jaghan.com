@@ -1,0 +1,31 @@
+.about {
+  padding: var(--space-7) 0;
+  background: var(--bg-primary);
+}
+
+.about-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-5);
+}
+
+.scrambled-content {
+  font-family: var(--font-body);
+  font-size: var(--body-lg);
+  line-height: 2.2;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 1s ease-out;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .scrambled-content {
+    font-size: var(--body);
+    line-height: 2;
+  }
+}

@@ -1,0 +1,21 @@
+<nav class="navbar" [class.menu-open]="isMenuOpen" [class.hidden]="!showNavbar">
+  <div class="navbar-container">
+    <a routerLink="/" class="navbar-logo" (click)="closeMenu()">
+      <span class="logo-text">JAGHAN</span>
+    </a>
+    
+    <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle menu">
+      <span class="hamburger-line" [class.active]="isMenuOpen"></span>
+      <span class="hamburger-line" [class.active]="isMenuOpen"></span>
+      <span class="hamburger-line" [class.active]="isMenuOpen"></span>
+    </button>
+
+    <ul class="navbar-menu" [class.active]="isMenuOpen">
+      <li><a routerLink="/" (click)="closeMenu()">Home</a></li>
+      <li><a routerLink="/professional" (click)="closeMenu()">My Work</a></li>
+      <li><a routerLink="/human" (click)="closeMenu()">The Human Side</a></li>
+      <li><a href="https://rocketrealm.jaghan.com" target="_blank" rel="noopener">RocketRealm ↗</a></li>
+      <li><a routerLink="/professional" fragment="contact" (click)="closeMenu()">Contact</a></li>
+    </ul>
+  </div>
+</nav>

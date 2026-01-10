@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaghan Vishwanathan A - Legacy Portfolio</title>
+    <link rel="stylesheet" href="/legacy/style.css">
+    <script src="https://kit.fontawesome.com/e1577ae1c0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav id="navbar" style="height:115%;">
+        <img src="/legacy/images/logo.png" class="logo" style="margin-left:50px; margin-top:5px;" >
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas1 fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div id="header">
+        <div class="container">
+
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Jaghan</span><br>Vishwanathan From Chennai<br>Currently pursuing my master's degree at <span>TU Darmstadt</span>.<br>
+                I'm a passionate <span>Full-Stack developer</span> with experience in creating robust web applications. <br>
+                In my free time I <span>Travel</span> a lot and explore stuffs on <span>Aviation</span><br></h1>
+            </div>
+        </div>
+    </div>
+
+<!----------------------------------------------------------------------------------------about---------------------------------------------------------------------> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" >
+                    <h1 class="sub-title">About Me </h1>
+                    <p>I am a hardworking and ambitious individual with excellent
+                        communication skills, enabling me to effectively communicate
+                        with a wide range of people. I am seeking a position in
+                        which I can put into practice my knowledge and experience,
+                        ultimately benefiting the operations of the organisation that
+                        I work for.</p>
+                </div>
+                <div class="about-col-2" style="margin-left:3%">
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br>JavaScript | TyperScript | Angular</li>
+                            <li><span>Backend Development</span><br>Java | Springboot | Maven </li>
+                            <li><span>UI/UX(undergoing)</span><br>Desgining Web/App Interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - 2024</span><br>Associate Engineer - Technology at Virtusa<br>Full Stack Developer</li>
+                            <li><span>2021 - 2022</span><br>Intern at Virtusa<br>Full Stack Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"id="education">
+                        <ul>
+                            <li><span>2024 - Present</span><br>M.S. ICE <br> Technische Universität Darmstadt</li>
+                            <li><span>2018 - 2022</span><br>B.E. ECE <br> R.M.K. College of Engineering and Technology</li>
+                            <li><span>2016 - 2018</span><br>HSC <br>Velammal Matriculation Higher Secondary School</li>
+                            <li><span>2015 - 2016</span><br>SSLC <br>Velammal Matriculation Higher Secondary School</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+    <br>
+   
+<!-- -------------------------projects------------------------ -->
+<div id="projects">
+    <div class="container">
+        <div class="project-head">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa fa-money"></i>
+                <h2>PlazaPalooza</h2>
+                <p>Plazapalooza is an innovative board game where players deploy their Al Bots for strategic clashes.
+                    Our platform manages all server API calls, seamlessly integrating bot actions into the user interface for an
+                    immersive gaming experience.</p>
+            </div>
+            <div>
+                <i class="fa fa-cart-plus"></i>
+                <h2>E-Kart</h2>
+                <p> An Angular-powered E-commerce platform, reminiscent of Flipkart, prioritizes seamless transactions,
+                    intuitive browsing, and robust administrative tools for sellers. With authGuard meticulously implemented on
+                    every page, we ensure stringent security measures, safeguarding sensitive data and transactions, thereby
+                    fostering trust and confidence among our esteemed users.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-person-military-rifle"></i>
+                <h2>Integrated Soldier Security System</h2>
+                <p>A device which tracks the location and necessary vitals of a soldier and actively records what the soldier sees and sends live satellite data to finish his tasks safely and effectively</p>
+            </div>
+            <div>
+                <i class="fa fa-user-md"></i>
+                <h2>Detection of Bone Fracture using Image Processing</h2>
+                <p>Our project leverages MATLAB, image processing, and
+                    machine learning to detect bone fractures efficiently. Advanced algorithms analyze medical images, ensuring
+                    swift and accurate diagnosis for improved patient care. </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-print"></i>
+                <h2>Printer Service Center</h2>
+                <p>A Web Application where users can get a prior appointment to get their printer serviced based on their location and availabilty</p>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-truck"></i>
+                <h2>Cargo Delivery - Parcelo</h2>
+                <p>A Web platform to register as a driver or user to provide or avail cargo delivery services</p>
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-hospital"></i>
+                <h2>Hospital Management</h2>
+                <p>A Core Java Project using JDBC to implement CRUD operations on Patient & Doctor database, and to book or cancel an appointment for a specific doctor</p>
+            </div>
+        </div>
+    </d>
+    </div>
+    </div>
+</div>
+<!-----------------------------------------------------------------------------------------contact------------------------------------------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><img src="https://img.icons8.com/color/30/null/gmail--v1.png"/> &ensp;jaghan2001@gmail.com</p>
+               
+                <div class="social-icons">
+                    <a href="https://twitter.com/_SILENTGUARDIAN"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.instagram.com/juliet_victor_alpha/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jaghanvishwanathan"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="/legacy/images/jaghanvishwanathana.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            
+            <div class="contact-right">
+                <form action="https://script.google.com/macros/s/AKfycbydSJ_5ljuyJmmLocag74SiWH4AAGz57TUxiul5ggltciKOIkD8sDRp4xtHkqaqLfG-/exec" 
+                      method="POST" 
+                      name="submit-to-google-sheet"
+                      target="hidden_iframe"
+                      onsubmit="return handleSubmit(this)">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2 submitbutton">Submit</button>
+                </form>
+                <iframe name="hidden_iframe" style="display:none;"></iframe>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------------------------------------Script------------------------------------------------------------------>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+   
+</script>
+
+<script>
+function showMessage() {
+  document.getElementById("msg").innerHTML = "✅ Message sent successfully!";
+  setTimeout(() => { document.getElementById("msg").innerHTML = ""; }, 5000);
+}
+</script>
+
+<script>
+function handleSubmit(form) {
+  setTimeout(() => {
+    document.getElementById("msg").innerHTML = "✅ Message sent successfully!";
+    form.reset();
+    setTimeout(() => { document.getElementById("msg").innerHTML = ""; }, 5000);
+  }, 500);
+
+  return true;
+}
+</script>
+
+  <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+  </script>
+
+</body>
+</html>
