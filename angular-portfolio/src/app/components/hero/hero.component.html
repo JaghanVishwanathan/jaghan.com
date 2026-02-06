@@ -1,0 +1,22 @@
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="scrambled-text-1">{{ scrambledText1 }}</h1>
+        <p class="scrambled-text-2">{{ scrambledText2 }}</p>
+      </div>
+
+      <div class="avatar-container">
+        <img src="assets/images/avatar-waving.png" alt="Jaghan waving" class="avatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="avatar-placeholder" style="display: none;">
+          <div class="avatar-icon">👋</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint" [class.visible]="showScrollHint">
+      <p>Scroll to enter my universe</p>
+      <span class="scroll-arrow">↓</span>
+    </div>
+  </div>
+</section>

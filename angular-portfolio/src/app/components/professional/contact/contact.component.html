@@ -1,0 +1,65 @@
+<section class="contact section" id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-content">
+      <div class="contact-info">
+        <p class="contact-intro">Want to build something meaningful together?</p>
+
+        <div class="contact-details">
+          <a href="mailto:jaghan2001&#64;gmail.com" class="contact-item">
+            <span class="contact-icon">
+              <img src="assets/images/icons/mail.png" alt="Mail" class="contact-icon-image" />
+            </span>
+            <span>jaghan2001&#64;gmail.com</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/jaghanvishwanathan" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-icon">
+              <img src="assets/images/icons/linkedin.png" alt="LinkedIn" class="contact-icon-image" />
+            </span>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="assets/jaghanvishwanathana.pdf" download class="contact-item">
+            <!-- <span class="contact-icon">
+              <img src="assets/images/icons/resume.png" alt="Download Resume" class="contact-icon-image" />
+            </span> -->
+            <span>Download Resume</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-container">
+        <form (ngSubmit)="onSubmit()" class="contact-form">
+          <input
+            type="text"
+            name="Name"
+            placeholder="Your Name"
+            [(ngModel)]="contactForm.name"
+            required
+            class="form-input"
+          />
+          <input
+            type="email"
+            name="Email"
+            placeholder="Your Email"
+            [(ngModel)]="contactForm.email"
+            required
+            class="form-input"
+          />
+          <textarea
+            name="Message"
+            rows="6"
+            placeholder="Your Message"
+            [(ngModel)]="contactForm.message"
+            required
+            class="form-textarea"
+          ></textarea>
+          <button type="submit" class="submit-button">Send Message</button>
+          <p class="submit-message" *ngIf="submitMessage">{{ submitMessage }}</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

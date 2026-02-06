@@ -1,0 +1,22 @@
+<section class="skills section">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    
+    <div class="skills-categories">
+      <div *ngFor="let category of skillCategories" class="skill-category-group">
+        <h3 class="category-title">{{ category.category }}.</h3>
+        <div class="skills-grid">
+          <div *ngFor="let skill of category.skills" class="skill-item">
+            <div class="skill-icon">
+              <img [src]="'assets/images/logos/' + skill.icon" [alt]="skill.name + ' logo'" onerror="this.style.display='none';" />
+            </div>
+            <div class="skill-info">
+              <h4 class="skill-name">{{ skill.name }}</h4>
+              <p class="skill-description">{{ skill.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
