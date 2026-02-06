@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/components/about/about.component.css"],
-  "sourcesContent": [".about {\r\n  padding: var(--space-7) 0;\r\n  background: var(--bg-primary);\r\n}\r\n\r\n.about-content {\r\n  max-width: 1400px;\r\n  margin: 0 auto;\r\n  padding: 0 var(--space-5);\r\n}\r\n\r\n.scrambled-content {\r\n  font-family: var(--font-body);\r\n  font-size: var(--body-lg);\r\n  line-height: 2.2;\r\n  color: var(--text-primary);\r\n  white-space: pre-wrap;\r\n  margin: 0;\r\n  padding: 0;\r\n  animation: fadeIn 1s ease-out;\r\n  font-variant-numeric: tabular-nums;\r\n  letter-spacing: 0.02em;\r\n  max-width: 100%;\r\n}\r\n\r\n@media (max-width: 768px) {\r\n  .scrambled-content {\r\n    font-size: var(--body);\r\n    line-height: 2;\r\n  }\r\n}\r\n"],
-  "mappings": ";AAAA,CAAC;AACC,WAAS,IAAI,WAAW;AACxB,cAAY,IAAI;AAClB;AAEA,CAAC;AACC,aAAW;AACX,UAAQ,EAAE;AACV,WAAS,EAAE,IAAI;AACjB;AAEA,CAAC;AACC,eAAa,IAAI;AACjB,aAAW,IAAI;AACf,eAAa;AACb,SAAO,IAAI;AACX,eAAa;AACb,UAAQ;AACR,WAAS;AACT,aAAW,OAAO,GAAG;AACrB,wBAAsB;AACtB,kBAAgB;AAChB,aAAW;AACb;AAEA,OAAO,CAAC,SAAS,EAAE;AACjB,GAfD;AAgBG,eAAW,IAAI;AACf,iBAAa;AACf;AACF;",
-  "names": []
-}
