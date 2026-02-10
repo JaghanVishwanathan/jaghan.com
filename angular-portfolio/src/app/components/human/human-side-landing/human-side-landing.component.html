@@ -1,0 +1,115 @@
+<!-- SECTION 0: HUMAN INTRO -->
+<section class="intro-section section" id="intro">
+  <div class="intro-content">
+    <h1 class="intro-headline">
+      {{ introScrambledTitle }}
+    </h1>
+
+    <div class="intro-divider"></div>
+
+    <p class="intro-lead">
+      I build software by profession,<br />
+      but curiosity is what actually drives me.
+    </p>
+
+    <div class="intro-body">
+      <p>I’m drawn to aviation and space.</p>
+      <p>
+        I travel often, not just to reach destinations,
+        but to experience the world in motion and unfamiliar places.
+      </p>
+      <p>Photography helps me slow down and notice details.</p>
+      <p>Cars, LEGO, and Hot Wheels remind me that engineering can be playful.</p>
+      <p class="intro-strong">
+        This page isn’t about achievements.
+        It’s about what quietly shapes how I think and build.
+      </p>
+    </div>
+
+    <div class="scroll-cue">
+      <span>Scroll</span>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: ROCKETREALM (NO CARD) -->
+<section class="rocketrealm-section section" id="rocketrealm">
+  <div class="rocketrealm-background">
+    <img
+      [src]="aviationBackgroundImage"
+      alt="RocketRealm aviation background"
+      class="rocketrealm-bg-image"
+    />
+    <div class="rocketrealm-overlay"></div>
+  </div>
+
+  <!-- TOP LEFT: TITLE -->
+  <div class="rocketrealm-title-block">
+    <h2>RocketRealm</h2>
+  </div>
+
+  <!-- TOP RIGHT: DESCRIPTION -->
+  <div class="rocketrealm-description">
+    <p class="primary">
+      RocketRealm is my aviation universe.
+      A place where aircraft are captured not just as machines,
+      but as expressions of human ambition, design, and motion.
+    </p>
+
+    <p class="secondary">
+      From quiet moments on the tarmac<br />
+      to powerful takeoffs that shake the ground.
+    </p>
+  </div>
+
+  <!-- BOTTOM LEFT: CTA -->
+  <div class="rocketrealm-cta-block">
+    <button class="rocketrealm-cta" (click)="navigateToRocketRealm()">
+      Enter RocketRealm
+    </button>
+  </div>
+</section>
+
+
+<!-- SECTION 2: LEGO -->
+<section class="lego-section section" id="lego">
+  <div class="lego-header">
+    <h2 class="lego-scrambled-text">{{ legoScrambledText }}</h2>
+  </div>
+
+  <div class="lego-grid">
+    <div class="lego-card" *ngFor="let build of legoBuilds">
+      <img
+        [src]="build.image"
+        [alt]="build.name"
+        class="lego-image"
+      />
+      <span class="lego-title">{{ build.name }}</span>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Section 3: Travel -->
+  <section class="travel-section section" id="travel">
+    <div class="travel-content">
+      <h2 class="travel-title">Travel</h2>
+      <p class="travel-placeholder">
+        The Busy and Lazy Human behind this portfolio is currently crafting this section. Check back for more content soon!
+      </p>
+    </div>
+  </section>
+
+<!-- Final Section -->
+<section class="quiet-exit-section section" id="quiet-exit">
+  <div class="quiet-exit-content">
+    <p class="quiet-exit-text">This is the part of me</p>
+    <p class="quiet-exit-text">
+      that doesn't fit neatly into a resume.
+    </p>
+    <p class="quiet-exit-text">
+      But it's the part that influences everything I build.
+    </p>
+  </div>
+  <div class="fade-to-black"></div>
+</section>

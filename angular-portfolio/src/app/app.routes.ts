@@ -15,21 +15,7 @@ export const routes: Routes = [
   },
   {
     path: 'human',
-    children: [
-      {
-        path: '',
-        redirectTo: 'journal',
-        pathMatch: 'full'
-      },
-      {
-        path: 'journal',
-        loadComponent: () => import('./components/human/micro-journal/micro-journal.component').then(m => m.MicroJournalComponent)
-      },
-      {
-        path: 'aviation',
-        loadComponent: () => import('./components/human/aviation-bridge/aviation-bridge.component').then(m => m.AviationBridgeComponent)
-      }
-    ]
+    loadComponent: () => import('./components/human/human-side-landing/human-side-landing.component').then(m => m.HumanSideLandingComponent)
   },
   {
     path: '**',
