@@ -17,6 +17,8 @@ interface LegoBuild {
 })
 export class HumanSideLandingComponent implements OnInit, AfterViewInit, OnDestroy {
   aviationBackgroundImage = '/assets/aviation/aircraft-hangar.jpg';
+  introScrambledTitle = '';
+  introScrambledLead = '';
   legoScrambledText = '';
   private subscriptions = new Subscription();
 
@@ -33,6 +35,26 @@ export class HumanSideLandingComponent implements OnInit, AfterViewInit, OnDestr
   ngOnInit(): void {
     // Scroll to top on component initialization
     window.scrollTo({ top: 0, behavior: 'instant' });
+
+    // Start intro title scrambling
+    this.subscriptions.add(
+      this.scrambleService
+        .scrambleAllAtOnce('Systems, Outside of Software', 20, 1000)
+        .subscribe((text: string) => {
+          this.introScrambledTitle = text;
+        })
+    );
+
+    // Start intro lead text scrambling
+    const leadText =
+      'I build software by profession, but curiosity is what actually drives me.';
+    this.subscriptions.add(
+      this.scrambleService
+        .scrambleAllAtOnce(leadText, 20, 1000)
+        .subscribe((text: string) => {
+          this.introScrambledLead = text;
+        })
+    );
   }
 
   ngOnDestroy(): void {
