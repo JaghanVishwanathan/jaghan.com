@@ -24,8 +24,11 @@ export class HumanSideLandingComponent implements OnInit, AfterViewInit, OnDestr
 
   legoBuilds: LegoBuild[] = [
     { name: 'The Artemis Launch System', image: '/assets/lego/artemis-launch-system.jpeg' },
+    { name: 'Lunar Rover', image: '/assets/lego/lunar.jpg' },
+    { name: 'Batmobile', image: '/assets/lego/batmobile.jpg' },
     { name: 'F1 Mercedes AMG Petronas', image: '/assets/lego/f1-mercedes-amg.jpeg' },
     { name: 'Shuttle Discovery', image: '/assets/lego/shuttle-discovery.jpeg' },
+    { name: 'The Office of Dumbledore', image: '/assets/lego/harrypotter.jpg' },
     { name: 'Batman', image: '/assets/lego/batman.jpeg' }
   ];
 
