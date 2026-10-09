@@ -62,7 +62,19 @@ export class ContentService {
   getExperiences(): Observable<Experience[]> {
     return of([
       {
-        period: '04/2025 – Present',
+        period: '06/2026 – Present',
+        title: 'Werkstudent - Full Stack Development',
+        company: 'UMYNO Solutions',
+        location: 'Frankfurt, Germany',
+        description: [
+          'Contributing to fullstack development for the UMYNO Suite, an AI worksuite for food R&D, with a primary focus on UI/UX.',
+          'Refining interfaces and workflows to make complex AI insights clearer and more usable for laboratory teams.',
+          'Building performant, modern code across the stack to keep the platform fast and reliable as features and data volumes grow.'
+        ],
+        isVolunteer: false
+      },
+      {
+        period: '04/2025 – 07/2026',
         title: 'Public Relations and Web Development',
         company: 'TU Darmstadt Space Technology e.V.',
         location: 'Darmstadt, Germany',

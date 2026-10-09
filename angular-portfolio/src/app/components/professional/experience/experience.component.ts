@@ -23,6 +23,7 @@ export class ExperienceComponent implements OnInit {
   getCompanyLogo(company: string): string {
     // Map company names to logo filenames
     const logoMap: { [key: string]: string } = {
+      'UMYNO Solutions': 'umyno.webp',
       'TU Darmstadt Space Technology e.V.': 'tudarmstadt.png',
       'Virtusa Consulting Services Pvt Ltd': 'virtusa.png'
     };
