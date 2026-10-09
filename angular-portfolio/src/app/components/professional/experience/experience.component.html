@@ -6,7 +6,7 @@
       <div
         *ngFor="let exp of experiences; let i = index"
         class="timeline-item"
-        [class.volunteer]="exp.isVolunteer"
+        [class.current]="exp.period.includes('Present')"
       >
         <div class="timeline-marker"></div>
         <div class="timeline-content">
